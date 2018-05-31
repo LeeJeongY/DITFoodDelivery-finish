@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		14C0100520BFC30C00A3F43B /* DetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C0100420BFC30C00A3F43B /* DetailTableViewCell.swift */; };
 		14F31D2520AD462000371496 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14F31D2420AD462000371496 /* AppDelegate.swift */; };
 		14F31D2A20AD462000371496 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14F31D2820AD462000371496 /* Main.storyboard */; };
 		14F31D2C20AD462000371496 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14F31D2B20AD462000371496 /* Assets.xcassets */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		14C0100420BFC30C00A3F43B /* DetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableViewCell.swift; sourceTree = "<group>"; };
 		14F31D2120AD461F00371496 /* DITFoodDelivery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DITFoodDelivery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14F31D2420AD462000371496 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		14F31D2920AD462000371496 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -57,6 +59,7 @@
 				14F31D2420AD462000371496 /* AppDelegate.swift */,
 				14F31D3620AD478900371496 /* FoodDeliveryTableViewController.swift */,
 				14F31D2820AD462000371496 /* Main.storyboard */,
+				14C0100420BFC30C00A3F43B /* DetailTableViewCell.swift */,
 				14F31D2B20AD462000371496 /* Assets.xcassets */,
 				14F31D2D20AD462000371496 /* LaunchScreen.storyboard */,
 				14F31D3020AD462000371496 /* Info.plist */,
@@ -136,6 +139,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14C0100520BFC30C00A3F43B /* DetailTableViewCell.swift in Sources */,
 				14F31D2520AD462000371496 /* AppDelegate.swift in Sources */,
 				14F31D3720AD478900371496 /* FoodDeliveryTableViewController.swift in Sources */,
 			);

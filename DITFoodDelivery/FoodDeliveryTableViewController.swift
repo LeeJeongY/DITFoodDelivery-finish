@@ -41,10 +41,11 @@ class FoodDeliveryTableViewController: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "RE", for: indexPath)
-        cell.textLabel?.text = foodStoreNames[indexPath.row]
-        cell.detailTextLabel?.text = foodStoreType[indexPath.row]
-        cell.imageView?.image = UIImage(named: foodStoreImages[indexPath.row])
+        let cell = tableView.dequeueReusableCell(withIdentifier: "RE", for: indexPath) as! DetailTableViewCell
+        cell.detailaddressLabel.text = foodStoreAddress[indexPath.row]
+        cell.detailNameLabel.text = foodStoreNames[indexPath.row]
+        cell.detailTypeLabel.text = foodStoreType[indexPath.row]
+        cell.detailImageView2.image = UIImage(named: foodStoreImages[indexPath.row])
         return cell
     }
 
