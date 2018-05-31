@@ -47,7 +47,29 @@ class FoodDeliveryTableViewController: UITableViewController {
         cell.detailTypeLabel.text = foodStoreType[indexPath.row]
         cell.detailImageView2.image = UIImage(named: foodStoreImages[indexPath.row])
         return cell
-    }
+    } 
+    
+    
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destinationViewController.
+     // Pass the selected object to the new view controller.
+        if segue.identifier == "detail" {
+            if let indexPath =  tableView.indexPathForSelectedRow {
+                let destinationController = segue.destination as! detailViewController
+                // 이름 넘기기
+                destinationController.title = foodStoreNames[indexPath.row]
+                // 이미지 넘기기
+                destinationController.cellName = foodStoreNames[indexPath.row]
+                destinationController.cellAddress = foodStoreAddress[indexPath.row]
+                destinationController.cellImage = foodStoreImages[indexPath.row]
+                destinationController.cellType = foodStoreType[indexPath.row]
+            }
+        }
+     }
+ 
 
 
     /*
@@ -85,14 +107,6 @@ class FoodDeliveryTableViewController: UITableViewController {
     }
     */
 
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
