@@ -12,18 +12,28 @@ class FoodDeliveryTableViewController: UITableViewController {
 
     var foodStoreNames = ["늘해랑", "번개반점", "아딸", "왕짜장", "토마토 도시락", "홍콩반점"]
     var foodStoreImages = ["01", "02", "03", "04", "05", "06"]
-    var foodStoreAddress = ["부산광역시 부산진구 중앙대로928번길 12", "부산광역시 부산진구 양지로 34", "부산광역시 부산진구 중앙대로909번길 4", "부산광역시 부산진구 진남로 505", "부산광역시 부산진구 양지로 28", "부산광역시 부산진구 중앙대로 902"]
+    var foodStoreAddress = ["부산광역시 부산진구 중앙대로928번길 12",
+                            "부산광역시 부산진구 양지로 34",
+                            "부산광역시 부산진구 중앙대로909번길 4",
+                            "부산광역시 부산진구 진남로 505",
+                            "부산광역시 부산진구 양지로 28",
+                            "부산광역시 부산진구 중앙대로 902"]
     var foodStoreType = ["돼지국밥", "중화요리", "분식집", "중화요리", "도시락", "중화요리"]
+    var foodStoreTel = ["051-863-6997",
+                        "051-852-9969",
+                        "051-852-9969",
+                        "051-852-9969",
+                        "051-852-9969",
+                        "051-853-0410"]
+    var foodStoreMenu = ["수육백반, 돼지국밥, 순대국밥, 내장국밥",
+                         "짜장면, 짬뽕, 짬짜면, 탕수육, 탕짜면, 군만두, 양장피",
+                         "떡볶이, 오뎅, 떡강정, 핫도그, 튀김",
+                         "짜장면, 짬뽕, 짬짜면, 탕수육, 볶짜면, 군만두, 양장피",
+                         "치킨마요, 참치마요, 돈불와퍼, 돈치와퍼, 돈까스카레",
+                         "짬뽕, 짜장면, 짬뽕밥, 볶음밥, 탕수육, 군만두"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
-        //
         self.title = "DIT 배달통"
     }
 
@@ -66,6 +76,8 @@ class FoodDeliveryTableViewController: UITableViewController {
                 destinationController.cellAddress = foodStoreAddress[indexPath.row]
                 destinationController.cellImage = foodStoreImages[indexPath.row]
                 destinationController.cellType = foodStoreType[indexPath.row]
+                destinationController.cellTel = foodStoreTel[indexPath.row]
+                destinationController.cellMenu = foodStoreMenu[indexPath.row]
             }
         }
      }
